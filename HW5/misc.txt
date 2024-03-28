@@ -1,0 +1,31 @@
+********** Example **********
+----- Student -----  
+  Student ID: 123456789
+  Name: 小雞
+
+----- Simulation -----
+  Passed PART: 1, 2, 3, 4
+
+----- Synthesis PI -----
+  A(Total cell area): 180000
+  T(Cycle time): 2.5
+  C(Average cycles per pattern): 3500 (with PAT_L=0 and PAT_U=99)
+  PI(AxTxC): 180000 x 2.5 x 3500 = 1575000000
+  PI Grade: A
+
+
+
+********** Fill your result here **********
+----- Student -----  
+  Student ID: 108061127
+  Name: 許澤群
+
+----- Simulation -----
+  Passed PART: 4
+
+----- Synthesis PI -----
+  A(Total cell area): 299860.134689
+  T(Cycle time): 8
+  C(Average cycles per pattern): 3314 (with PAT_L=0 and PAT_U=99)
+  PI(AxTxC): 299860.134689 x 8 x 3314 = 7,949,891,890.874768
+  PI Grade: C    

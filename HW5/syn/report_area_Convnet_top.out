@@ -1,0 +1,587 @@
+ 
+****************************************
+Report : area
+Design : Convnet_top
+Version: R-2020.09-SP5
+Date   : Thu Dec  8 23:41:11 2022
+****************************************
+
+Library(s) Used:
+
+    slow_vdd1v2 (File: /usr/cadtool/GPDK45/gsclib045_svt_v4.4/gsclib045/db/slow_vdd1v2_basicCells_wl.db)
+
+Number of ports:                         3679
+Number of nets:                        130670
+Number of cells:                       102989
+Number of combinational cells:          96390
+Number of sequential cells:              6078
+Number of macros/black boxes:               0
+Number of buf/inv:                      10428
+Number of references:                     626
+
+Combinational area:             253287.599650
+Buf/Inv area:                     9393.714210
+Noncombinational area:           46572.535039
+Macro/Black Box area:                0.000000
+Net Interconnect area:               0.000000
+
+Total cell area:                299860.134689
+Total area:                     299860.134689
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black-
+                                  Total        Total    national     national    boxes   Design
+--------------------------------  -----------  -------  -----------  ----------  ------  ---------------------------------------------
+Convnet_top                       299860.1347    100.0  252574.8716  43721.6230  0.0000  Convnet_top
+clk_gate_bias_dw_reg_0_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_129
+clk_gate_bias_dw_reg_1_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_128
+clk_gate_bias_dw_reg_2_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_127
+clk_gate_bias_dw_reg_3_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_126
+clk_gate_bias_pw_reg_0_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_35
+clk_gate_bias_pw_reg_10_               6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_1
+clk_gate_bias_pw_reg_1_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_34
+clk_gate_bias_pw_reg_2_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_33
+clk_gate_bias_pw_reg_4_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_6
+clk_gate_bias_pw_reg_5_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_5
+clk_gate_bias_pw_reg_7_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_4
+clk_gate_bias_pw_reg_8_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_3
+clk_gate_bias_pw_reg_9_                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_2
+clk_gate_cnt_reg                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_480
+clk_gate_cnt_reg_0                     6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_479
+clk_gate_convolved_temp_b0_reg_0_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_0
+clk_gate_convolved_temp_b0_reg_0__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_521
+clk_gate_convolved_temp_b0_reg_0__1
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_520
+clk_gate_convolved_temp_b0_reg_1_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_519
+clk_gate_convolved_temp_b0_reg_1__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_518
+clk_gate_convolved_temp_b0_reg_2_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_517
+clk_gate_convolved_temp_b0_reg_2__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_516
+clk_gate_convolved_temp_b0_reg_3_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_515
+clk_gate_convolved_temp_b0_reg_3__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_514
+clk_gate_convolved_temp_b1_reg_0_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_505
+clk_gate_convolved_temp_b1_reg_0__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_504
+clk_gate_convolved_temp_b1_reg_1_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_503
+clk_gate_convolved_temp_b1_reg_1__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_502
+clk_gate_convolved_temp_b1_reg_2_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_501
+clk_gate_convolved_temp_b1_reg_2__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_500
+clk_gate_convolved_temp_b1_reg_2__1
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_499
+clk_gate_convolved_temp_b1_reg_3_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_498
+clk_gate_convolved_temp_b1_reg_3__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_497
+clk_gate_convolved_temp_b2_reg_0_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_496
+clk_gate_convolved_temp_b2_reg_0__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_495
+clk_gate_convolved_temp_b2_reg_1_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_494
+clk_gate_convolved_temp_b2_reg_1__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_493
+clk_gate_convolved_temp_b2_reg_2_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_492
+clk_gate_convolved_temp_b2_reg_2__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_491
+clk_gate_convolved_temp_b2_reg_3_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_490
+clk_gate_convolved_temp_b2_reg_3__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_489
+clk_gate_convolved_temp_b3_reg_0_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_513
+clk_gate_convolved_temp_b3_reg_0__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_512
+clk_gate_convolved_temp_b3_reg_1_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_511
+clk_gate_convolved_temp_b3_reg_1__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_510
+clk_gate_convolved_temp_b3_reg_2_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_509
+clk_gate_convolved_temp_b3_reg_2__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_508
+clk_gate_convolved_temp_b3_reg_3_      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_507
+clk_gate_convolved_temp_b3_reg_3__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_506
+clk_gate_feature_map0_pw_reg_0_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_105
+clk_gate_feature_map0_pw_reg_10_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_93
+clk_gate_feature_map0_pw_reg_11_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_92
+clk_gate_feature_map0_pw_reg_12_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_91
+clk_gate_feature_map0_pw_reg_13_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_90
+clk_gate_feature_map0_pw_reg_14_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_89
+clk_gate_feature_map0_pw_reg_14__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_88
+clk_gate_feature_map0_pw_reg_15_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_87
+clk_gate_feature_map0_pw_reg_1_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_104
+clk_gate_feature_map0_pw_reg_2_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_103
+clk_gate_feature_map0_pw_reg_3_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_102
+clk_gate_feature_map0_pw_reg_4_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_101
+clk_gate_feature_map0_pw_reg_4__0      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_100
+clk_gate_feature_map0_pw_reg_5_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_99
+clk_gate_feature_map0_pw_reg_6_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_98
+clk_gate_feature_map0_pw_reg_7_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_97
+clk_gate_feature_map0_pw_reg_8_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_96
+clk_gate_feature_map0_pw_reg_9_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_95
+clk_gate_feature_map0_pw_reg_9__0      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_94
+clk_gate_feature_map1_pw_reg_0_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_67
+clk_gate_feature_map1_pw_reg_10_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_55
+clk_gate_feature_map1_pw_reg_11_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_54
+clk_gate_feature_map1_pw_reg_12_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_53
+clk_gate_feature_map1_pw_reg_12__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_52
+clk_gate_feature_map1_pw_reg_13_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_51
+clk_gate_feature_map1_pw_reg_14_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_50
+clk_gate_feature_map1_pw_reg_15_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_49
+clk_gate_feature_map1_pw_reg_1_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_66
+clk_gate_feature_map1_pw_reg_2_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_65
+clk_gate_feature_map1_pw_reg_2__0      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_64
+clk_gate_feature_map1_pw_reg_3_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_63
+clk_gate_feature_map1_pw_reg_4_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_62
+clk_gate_feature_map1_pw_reg_5_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_61
+clk_gate_feature_map1_pw_reg_6_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_60
+clk_gate_feature_map1_pw_reg_7_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_59
+clk_gate_feature_map1_pw_reg_7__0      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_58
+clk_gate_feature_map1_pw_reg_8_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_57
+clk_gate_feature_map1_pw_reg_9_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_56
+clk_gate_feature_map2_pw_reg_0_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_125
+clk_gate_feature_map2_pw_reg_0__0      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_124
+clk_gate_feature_map2_pw_reg_10_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_113
+clk_gate_feature_map2_pw_reg_10__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_112
+clk_gate_feature_map2_pw_reg_11_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_111
+clk_gate_feature_map2_pw_reg_12_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_110
+clk_gate_feature_map2_pw_reg_13_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_109
+clk_gate_feature_map2_pw_reg_14_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_108
+clk_gate_feature_map2_pw_reg_15_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_107
+clk_gate_feature_map2_pw_reg_15__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_106
+clk_gate_feature_map2_pw_reg_1_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_123
+clk_gate_feature_map2_pw_reg_2_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_122
+clk_gate_feature_map2_pw_reg_3_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_121
+clk_gate_feature_map2_pw_reg_4_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_120
+clk_gate_feature_map2_pw_reg_5_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_119
+clk_gate_feature_map2_pw_reg_5__0      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_118
+clk_gate_feature_map2_pw_reg_6_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_117
+clk_gate_feature_map2_pw_reg_7_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_116
+clk_gate_feature_map2_pw_reg_8_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_115
+clk_gate_feature_map2_pw_reg_9_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_114
+clk_gate_feature_map3_pw_reg_0_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_86
+clk_gate_feature_map3_pw_reg_10_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_74
+clk_gate_feature_map3_pw_reg_11_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_73
+clk_gate_feature_map3_pw_reg_12_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_72
+clk_gate_feature_map3_pw_reg_13_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_71
+clk_gate_feature_map3_pw_reg_13__0
+                                       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_70
+clk_gate_feature_map3_pw_reg_14_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_69
+clk_gate_feature_map3_pw_reg_15_       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_68
+clk_gate_feature_map3_pw_reg_1_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_85
+clk_gate_feature_map3_pw_reg_2_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_84
+clk_gate_feature_map3_pw_reg_3_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_83
+clk_gate_feature_map3_pw_reg_3__0      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_82
+clk_gate_feature_map3_pw_reg_4_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_81
+clk_gate_feature_map3_pw_reg_5_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_80
+clk_gate_feature_map3_pw_reg_6_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_79
+clk_gate_feature_map3_pw_reg_7_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_78
+clk_gate_feature_map3_pw_reg_8_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_77
+clk_gate_feature_map3_pw_reg_8__0      6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_76
+clk_gate_feature_map3_pw_reg_9_        6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_75
+clk_gate_map0_reg_0_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_434
+clk_gate_map0_reg_10_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_422
+clk_gate_map0_reg_11_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_421
+clk_gate_map0_reg_12_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_420
+clk_gate_map0_reg_13_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_419
+clk_gate_map0_reg_14_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_418
+clk_gate_map0_reg_14__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_417
+clk_gate_map0_reg_15_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_416
+clk_gate_map0_reg_16_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_415
+clk_gate_map0_reg_17_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_414
+clk_gate_map0_reg_18_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_413
+clk_gate_map0_reg_19_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_412
+clk_gate_map0_reg_19__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_411
+clk_gate_map0_reg_1_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_433
+clk_gate_map0_reg_20_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_410
+clk_gate_map0_reg_21_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_409
+clk_gate_map0_reg_22_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_408
+clk_gate_map0_reg_23_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_407
+clk_gate_map0_reg_24_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_406
+clk_gate_map0_reg_24__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_405
+clk_gate_map0_reg_25_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_404
+clk_gate_map0_reg_26_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_403
+clk_gate_map0_reg_27_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_402
+clk_gate_map0_reg_28_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_401
+clk_gate_map0_reg_29_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_400
+clk_gate_map0_reg_29__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_399
+clk_gate_map0_reg_2_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_432
+clk_gate_map0_reg_30_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_398
+clk_gate_map0_reg_31_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_397
+clk_gate_map0_reg_32_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_396
+clk_gate_map0_reg_33_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_395
+clk_gate_map0_reg_34_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_394
+clk_gate_map0_reg_34__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_393
+clk_gate_map0_reg_35_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_392
+clk_gate_map0_reg_3_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_431
+clk_gate_map0_reg_4_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_430
+clk_gate_map0_reg_4__0                 6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_429
+clk_gate_map0_reg_5_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_428
+clk_gate_map0_reg_6_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_427
+clk_gate_map0_reg_7_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_426
+clk_gate_map0_reg_8_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_425
+clk_gate_map0_reg_9_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_424
+clk_gate_map0_reg_9__0                 6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_423
+clk_gate_map1_reg_0_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_348
+clk_gate_map1_reg_10_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_336
+clk_gate_map1_reg_11_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_335
+clk_gate_map1_reg_12_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_334
+clk_gate_map1_reg_12__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_333
+clk_gate_map1_reg_13_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_332
+clk_gate_map1_reg_14_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_331
+clk_gate_map1_reg_15_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_330
+clk_gate_map1_reg_16_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_329
+clk_gate_map1_reg_17_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_328
+clk_gate_map1_reg_17__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_327
+clk_gate_map1_reg_18_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_326
+clk_gate_map1_reg_19_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_325
+clk_gate_map1_reg_1_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_347
+clk_gate_map1_reg_20_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_324
+clk_gate_map1_reg_21_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_323
+clk_gate_map1_reg_22_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_322
+clk_gate_map1_reg_22__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_321
+clk_gate_map1_reg_23_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_320
+clk_gate_map1_reg_24_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_319
+clk_gate_map1_reg_25_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_318
+clk_gate_map1_reg_26_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_317
+clk_gate_map1_reg_27_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_316
+clk_gate_map1_reg_27__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_315
+clk_gate_map1_reg_28_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_314
+clk_gate_map1_reg_29_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_313
+clk_gate_map1_reg_2_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_346
+clk_gate_map1_reg_2__0                 6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_345
+clk_gate_map1_reg_30_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_312
+clk_gate_map1_reg_31_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_311
+clk_gate_map1_reg_32_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_310
+clk_gate_map1_reg_32__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_309
+clk_gate_map1_reg_33_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_308
+clk_gate_map1_reg_34_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_307
+clk_gate_map1_reg_35_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_306
+clk_gate_map1_reg_3_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_344
+clk_gate_map1_reg_4_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_343
+clk_gate_map1_reg_5_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_342
+clk_gate_map1_reg_6_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_341
+clk_gate_map1_reg_7_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_340
+clk_gate_map1_reg_7__0                 6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_339
+clk_gate_map1_reg_8_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_338
+clk_gate_map1_reg_9_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_337
+clk_gate_map2_reg_0_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_478
+clk_gate_map2_reg_0__0                 6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_477
+clk_gate_map2_reg_10_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_466
+clk_gate_map2_reg_10__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_465
+clk_gate_map2_reg_11_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_464
+clk_gate_map2_reg_12_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_463
+clk_gate_map2_reg_13_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_462
+clk_gate_map2_reg_14_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_461
+clk_gate_map2_reg_15_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_460
+clk_gate_map2_reg_15__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_459
+clk_gate_map2_reg_16_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_458
+clk_gate_map2_reg_17_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_457
+clk_gate_map2_reg_18_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_456
+clk_gate_map2_reg_19_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_455
+clk_gate_map2_reg_1_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_476
+clk_gate_map2_reg_20_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_454
+clk_gate_map2_reg_20__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_453
+clk_gate_map2_reg_21_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_452
+clk_gate_map2_reg_22_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_451
+clk_gate_map2_reg_23_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_450
+clk_gate_map2_reg_24_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_449
+clk_gate_map2_reg_25_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_448
+clk_gate_map2_reg_25__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_447
+clk_gate_map2_reg_26_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_446
+clk_gate_map2_reg_27_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_445
+clk_gate_map2_reg_28_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_444
+clk_gate_map2_reg_29_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_443
+clk_gate_map2_reg_2_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_475
+clk_gate_map2_reg_30_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_442
+clk_gate_map2_reg_30__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_441
+clk_gate_map2_reg_31_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_440
+clk_gate_map2_reg_32_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_439
+clk_gate_map2_reg_33_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_438
+clk_gate_map2_reg_34_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_437
+clk_gate_map2_reg_35_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_436
+clk_gate_map2_reg_35__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_435
+clk_gate_map2_reg_3_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_474
+clk_gate_map2_reg_4_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_473
+clk_gate_map2_reg_5_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_472
+clk_gate_map2_reg_5__0                 6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_471
+clk_gate_map2_reg_6_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_470
+clk_gate_map2_reg_7_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_469
+clk_gate_map2_reg_8_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_468
+clk_gate_map2_reg_9_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_467
+clk_gate_map3_reg_0_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_391
+clk_gate_map3_reg_10_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_379
+clk_gate_map3_reg_11_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_378
+clk_gate_map3_reg_12_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_377
+clk_gate_map3_reg_13_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_376
+clk_gate_map3_reg_13__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_375
+clk_gate_map3_reg_14_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_374
+clk_gate_map3_reg_15_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_373
+clk_gate_map3_reg_16_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_372
+clk_gate_map3_reg_17_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_371
+clk_gate_map3_reg_18_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_370
+clk_gate_map3_reg_18__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_369
+clk_gate_map3_reg_19_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_368
+clk_gate_map3_reg_1_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_390
+clk_gate_map3_reg_20_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_367
+clk_gate_map3_reg_21_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_366
+clk_gate_map3_reg_22_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_365
+clk_gate_map3_reg_23_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_364
+clk_gate_map3_reg_23__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_363
+clk_gate_map3_reg_24_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_362
+clk_gate_map3_reg_25_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_361
+clk_gate_map3_reg_26_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_360
+clk_gate_map3_reg_27_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_359
+clk_gate_map3_reg_28_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_358
+clk_gate_map3_reg_28__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_357
+clk_gate_map3_reg_29_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_356
+clk_gate_map3_reg_2_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_389
+clk_gate_map3_reg_30_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_355
+clk_gate_map3_reg_31_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_354
+clk_gate_map3_reg_32_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_353
+clk_gate_map3_reg_33_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_352
+clk_gate_map3_reg_33__0                6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_351
+clk_gate_map3_reg_34_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_350
+clk_gate_map3_reg_35_                  6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_349
+clk_gate_map3_reg_3_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_388
+clk_gate_map3_reg_3__0                 6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_387
+clk_gate_map3_reg_4_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_386
+clk_gate_map3_reg_5_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_385
+clk_gate_map3_reg_6_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_384
+clk_gate_map3_reg_7_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_383
+clk_gate_map3_reg_8_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_382
+clk_gate_map3_reg_8__0                 6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_381
+clk_gate_map3_reg_9_                   6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_380
+clk_gate_sram_raddr_b0_reg             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_488
+clk_gate_sram_raddr_b2_reg             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_487
+clk_gate_sram_raddr_weight_reg         6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_486
+clk_gate_sram_raddr_weight_reg_0       6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_485
+clk_gate_sram_waddr_a_reg              6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_482
+clk_gate_sram_waddr_b_reg              6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_481
+clk_gate_sram_wordmask_b_reg_0         6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_483
+clk_gate_weight0_dw_reg_0_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_153
+clk_gate_weight0_dw_reg_10_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_260
+clk_gate_weight0_dw_reg_11_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_259
+clk_gate_weight0_dw_reg_12_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_258
+clk_gate_weight0_dw_reg_14_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_257
+clk_gate_weight0_dw_reg_15_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_256
+clk_gate_weight0_dw_reg_16_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_255
+clk_gate_weight0_dw_reg_17_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_254
+clk_gate_weight0_dw_reg_19_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_253
+clk_gate_weight0_dw_reg_1_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_152
+clk_gate_weight0_dw_reg_20_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_252
+clk_gate_weight0_dw_reg_21_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_251
+clk_gate_weight0_dw_reg_22_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_250
+clk_gate_weight0_dw_reg_24_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_249
+clk_gate_weight0_dw_reg_25_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_248
+clk_gate_weight0_dw_reg_26_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_247
+clk_gate_weight0_dw_reg_27_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_246
+clk_gate_weight0_dw_reg_29_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_245
+clk_gate_weight0_dw_reg_2_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_151
+clk_gate_weight0_dw_reg_30_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_244
+clk_gate_weight0_dw_reg_31_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_243
+clk_gate_weight0_dw_reg_32_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_242
+clk_gate_weight0_dw_reg_34_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_241
+clk_gate_weight0_dw_reg_35_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_240
+clk_gate_weight0_dw_reg_36_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_239
+clk_gate_weight0_dw_reg_37_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_238
+clk_gate_weight0_dw_reg_39_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_237
+clk_gate_weight0_dw_reg_3_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_150
+clk_gate_weight0_dw_reg_40_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_236
+clk_gate_weight0_dw_reg_41_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_235
+clk_gate_weight0_dw_reg_42_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_234
+clk_gate_weight0_dw_reg_44_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_233
+clk_gate_weight0_dw_reg_45_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_232
+clk_gate_weight0_dw_reg_46_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_231
+clk_gate_weight0_dw_reg_47_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_230
+clk_gate_weight0_dw_reg_49_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_229
+clk_gate_weight0_dw_reg_4_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_149
+clk_gate_weight0_dw_reg_50_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_228
+clk_gate_weight0_dw_reg_51_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_227
+clk_gate_weight0_dw_reg_52_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_226
+clk_gate_weight0_dw_reg_5_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_148
+clk_gate_weight0_dw_reg_6_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_147
+clk_gate_weight0_dw_reg_7_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_146
+clk_gate_weight0_dw_reg_9_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_261
+clk_gate_weight1_dw_reg_0_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_137
+clk_gate_weight1_dw_reg_10_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_188
+clk_gate_weight1_dw_reg_11_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_187
+clk_gate_weight1_dw_reg_12_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_186
+clk_gate_weight1_dw_reg_14_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_185
+clk_gate_weight1_dw_reg_15_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_184
+clk_gate_weight1_dw_reg_16_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_183
+clk_gate_weight1_dw_reg_17_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_182
+clk_gate_weight1_dw_reg_19_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_181
+clk_gate_weight1_dw_reg_1_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_136
+clk_gate_weight1_dw_reg_20_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_180
+clk_gate_weight1_dw_reg_21_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_179
+clk_gate_weight1_dw_reg_22_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_178
+clk_gate_weight1_dw_reg_24_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_177
+clk_gate_weight1_dw_reg_25_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_176
+clk_gate_weight1_dw_reg_26_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_175
+clk_gate_weight1_dw_reg_27_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_174
+clk_gate_weight1_dw_reg_29_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_173
+clk_gate_weight1_dw_reg_2_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_135
+clk_gate_weight1_dw_reg_30_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_172
+clk_gate_weight1_dw_reg_31_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_171
+clk_gate_weight1_dw_reg_32_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_170
+clk_gate_weight1_dw_reg_34_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_169
+clk_gate_weight1_dw_reg_35_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_168
+clk_gate_weight1_dw_reg_36_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_167
+clk_gate_weight1_dw_reg_37_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_166
+clk_gate_weight1_dw_reg_39_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_165
+clk_gate_weight1_dw_reg_3_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_134
+clk_gate_weight1_dw_reg_40_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_164
+clk_gate_weight1_dw_reg_41_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_163
+clk_gate_weight1_dw_reg_42_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_162
+clk_gate_weight1_dw_reg_44_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_161
+clk_gate_weight1_dw_reg_45_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_160
+clk_gate_weight1_dw_reg_46_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_159
+clk_gate_weight1_dw_reg_47_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_158
+clk_gate_weight1_dw_reg_49_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_157
+clk_gate_weight1_dw_reg_4_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_133
+clk_gate_weight1_dw_reg_50_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_156
+clk_gate_weight1_dw_reg_51_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_155
+clk_gate_weight1_dw_reg_52_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_154
+clk_gate_weight1_dw_reg_5_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_132
+clk_gate_weight1_dw_reg_6_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_131
+clk_gate_weight1_dw_reg_7_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_130
+clk_gate_weight1_dw_reg_9_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_189
+clk_gate_weight2_dw_reg_0_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_305
+clk_gate_weight2_dw_reg_10_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_296
+clk_gate_weight2_dw_reg_11_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_295
+clk_gate_weight2_dw_reg_12_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_294
+clk_gate_weight2_dw_reg_14_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_293
+clk_gate_weight2_dw_reg_15_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_292
+clk_gate_weight2_dw_reg_16_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_291
+clk_gate_weight2_dw_reg_17_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_290
+clk_gate_weight2_dw_reg_19_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_289
+clk_gate_weight2_dw_reg_1_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_304
+clk_gate_weight2_dw_reg_20_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_288
+clk_gate_weight2_dw_reg_21_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_287
+clk_gate_weight2_dw_reg_22_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_286
+clk_gate_weight2_dw_reg_24_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_285
+clk_gate_weight2_dw_reg_25_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_284
+clk_gate_weight2_dw_reg_26_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_283
+clk_gate_weight2_dw_reg_27_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_282
+clk_gate_weight2_dw_reg_29_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_281
+clk_gate_weight2_dw_reg_2_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_303
+clk_gate_weight2_dw_reg_30_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_280
+clk_gate_weight2_dw_reg_31_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_279
+clk_gate_weight2_dw_reg_32_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_278
+clk_gate_weight2_dw_reg_34_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_277
+clk_gate_weight2_dw_reg_35_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_276
+clk_gate_weight2_dw_reg_36_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_275
+clk_gate_weight2_dw_reg_37_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_274
+clk_gate_weight2_dw_reg_39_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_273
+clk_gate_weight2_dw_reg_3_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_302
+clk_gate_weight2_dw_reg_40_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_272
+clk_gate_weight2_dw_reg_41_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_271
+clk_gate_weight2_dw_reg_42_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_270
+clk_gate_weight2_dw_reg_44_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_269
+clk_gate_weight2_dw_reg_45_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_268
+clk_gate_weight2_dw_reg_46_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_267
+clk_gate_weight2_dw_reg_47_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_266
+clk_gate_weight2_dw_reg_49_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_265
+clk_gate_weight2_dw_reg_4_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_301
+clk_gate_weight2_dw_reg_50_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_264
+clk_gate_weight2_dw_reg_51_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_263
+clk_gate_weight2_dw_reg_52_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_262
+clk_gate_weight2_dw_reg_5_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_300
+clk_gate_weight2_dw_reg_6_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_299
+clk_gate_weight2_dw_reg_7_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_298
+clk_gate_weight2_dw_reg_9_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_297
+clk_gate_weight3_dw_reg_0_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_145
+clk_gate_weight3_dw_reg_10_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_224
+clk_gate_weight3_dw_reg_11_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_223
+clk_gate_weight3_dw_reg_12_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_222
+clk_gate_weight3_dw_reg_14_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_221
+clk_gate_weight3_dw_reg_15_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_220
+clk_gate_weight3_dw_reg_16_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_219
+clk_gate_weight3_dw_reg_17_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_218
+clk_gate_weight3_dw_reg_19_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_217
+clk_gate_weight3_dw_reg_1_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_144
+clk_gate_weight3_dw_reg_20_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_216
+clk_gate_weight3_dw_reg_21_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_215
+clk_gate_weight3_dw_reg_22_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_214
+clk_gate_weight3_dw_reg_24_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_213
+clk_gate_weight3_dw_reg_25_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_212
+clk_gate_weight3_dw_reg_26_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_211
+clk_gate_weight3_dw_reg_27_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_210
+clk_gate_weight3_dw_reg_29_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_209
+clk_gate_weight3_dw_reg_2_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_143
+clk_gate_weight3_dw_reg_30_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_208
+clk_gate_weight3_dw_reg_31_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_207
+clk_gate_weight3_dw_reg_32_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_206
+clk_gate_weight3_dw_reg_34_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_205
+clk_gate_weight3_dw_reg_35_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_204
+clk_gate_weight3_dw_reg_36_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_203
+clk_gate_weight3_dw_reg_37_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_202
+clk_gate_weight3_dw_reg_39_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_201
+clk_gate_weight3_dw_reg_3_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_142
+clk_gate_weight3_dw_reg_40_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_200
+clk_gate_weight3_dw_reg_41_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_199
+clk_gate_weight3_dw_reg_42_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_198
+clk_gate_weight3_dw_reg_44_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_197
+clk_gate_weight3_dw_reg_45_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_196
+clk_gate_weight3_dw_reg_46_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_195
+clk_gate_weight3_dw_reg_47_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_194
+clk_gate_weight3_dw_reg_49_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_193
+clk_gate_weight3_dw_reg_4_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_141
+clk_gate_weight3_dw_reg_50_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_192
+clk_gate_weight3_dw_reg_51_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_191
+clk_gate_weight3_dw_reg_52_            6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_190
+clk_gate_weight3_dw_reg_5_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_140
+clk_gate_weight3_dw_reg_6_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_139
+clk_gate_weight3_dw_reg_7_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_138
+clk_gate_weight3_dw_reg_9_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_225
+clk_gate_weight_pw_reg_0_              6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_48
+clk_gate_weight_pw_reg_10_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_40
+clk_gate_weight_pw_reg_11_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_39
+clk_gate_weight_pw_reg_12_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_38
+clk_gate_weight_pw_reg_13_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_37
+clk_gate_weight_pw_reg_15_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_36
+clk_gate_weight_pw_reg_16_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_32
+clk_gate_weight_pw_reg_17_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_31
+clk_gate_weight_pw_reg_18_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_30
+clk_gate_weight_pw_reg_19_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_29
+clk_gate_weight_pw_reg_1_              6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_47
+clk_gate_weight_pw_reg_21_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_28
+clk_gate_weight_pw_reg_22_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_27
+clk_gate_weight_pw_reg_23_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_26
+clk_gate_weight_pw_reg_24_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_25
+clk_gate_weight_pw_reg_26_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_24
+clk_gate_weight_pw_reg_27_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_23
+clk_gate_weight_pw_reg_28_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_22
+clk_gate_weight_pw_reg_29_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_21
+clk_gate_weight_pw_reg_2_              6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_46
+clk_gate_weight_pw_reg_31_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_20
+clk_gate_weight_pw_reg_32_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_19
+clk_gate_weight_pw_reg_33_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_18
+clk_gate_weight_pw_reg_34_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_17
+clk_gate_weight_pw_reg_36_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_16
+clk_gate_weight_pw_reg_37_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_15
+clk_gate_weight_pw_reg_38_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_14
+clk_gate_weight_pw_reg_39_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_13
+clk_gate_weight_pw_reg_3_              6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_45
+clk_gate_weight_pw_reg_41_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_12
+clk_gate_weight_pw_reg_42_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_11
+clk_gate_weight_pw_reg_43_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_10
+clk_gate_weight_pw_reg_44_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_9
+clk_gate_weight_pw_reg_46_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_8
+clk_gate_weight_pw_reg_47_             6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_7
+clk_gate_weight_pw_reg_5_              6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_44
+clk_gate_weight_pw_reg_6_              6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_43
+clk_gate_weight_pw_reg_7_              6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_42
+clk_gate_weight_pw_reg_8_              6.8400      0.0       1.3680      5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_41
+--------------------------------  -----------  -------  -----------  ----------  ------  ---------------------------------------------
+Total                                                   253287.5997  46572.5350  0.0000
+
+1

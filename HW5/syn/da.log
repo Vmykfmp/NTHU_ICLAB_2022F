@@ -1,0 +1,1780 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP5 for linux64 - Apr 23, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# set your TOPLEVEL here
+set TOPLEVEL "Convnet_top"
+Convnet_top
+# change your timing constraint here
+set TEST_CYCLE 8.0
+8.0
+source -echo -verbose 0_readfile.tcl 
+set TOP_DIR $TOPLEVEL
+Convnet_top
+set RPT_DIR report
+report
+set NET_DIR netlist
+netlist
+sh rm -rf ./$TOP_DIR
+sh rm -rf ./$RPT_DIR
+sh rm -rf ./$NET_DIR
+sh mkdir ./$TOP_DIR
+sh mkdir ./$RPT_DIR
+sh mkdir ./$NET_DIR
+# define a lib path here
+define_design_lib $TOPLEVEL -path ./$TOPLEVEL
+1
+# Read Design File (add your files here)
+set HDL_DIR "../hdl"
+../hdl
+analyze -library $TOPLEVEL -format verilog "$HDL_DIR/Convnet_top.v"
+Running PRESTO HDLC
+Compiling source file ../hdl/Convnet_top.v
+Presto compilation completed successfully.
+Loading db file '/usr/cadtool/GPDK45/gsclib045_svt_v4.4/gsclib045/db/slow_vdd1v2_basicCells_wl.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+1
+# elaborate your design
+elaborate $TOPLEVEL -architecture verilog -library $TOPLEVEL
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow_vdd1v2'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../hdl/Convnet_top.v:624: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:625: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:626: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:627: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:656: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:659: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:662: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:665: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:939: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:940: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:941: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:942: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:948: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:949: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:950: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:951: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1005: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1008: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1011: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1014: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1376: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1377: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1378: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1379: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1395: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1396: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1397: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1398: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1403: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1404: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1405: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1406: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1411: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1412: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1413: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1414: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1419: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1420: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1421: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1422: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1570: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1571: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1572: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1573: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1589: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1590: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1591: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1592: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1597: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1598: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1599: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1600: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1605: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1606: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1607: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1608: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1613: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1614: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1615: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1616: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1742: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1743: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1744: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1745: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1778: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1779: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1780: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1781: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1811: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1812: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1813: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1814: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1847: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1848: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1849: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1850: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1923: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1924: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1925: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1926: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1943: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1947: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1951: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1955: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1959: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1966: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2020: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2021: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2022: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2023: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2024: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2025: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2026: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2027: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2028: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2031: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2032: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2033: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2034: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2035: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2036: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2037: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2038: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2039: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2042: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2043: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2044: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2045: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2046: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2047: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2048: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2049: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2050: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2053: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2054: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2055: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2056: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2057: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2058: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2059: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2060: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2061: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2493: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2496: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2499: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2502: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2519: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2522: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2525: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2528: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2544: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2547: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2550: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2553: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2568: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2571: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2574: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2577: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2580: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2583: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2586: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2589: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2592: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2595: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2598: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2601: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2622: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2625: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2724: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2727: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1959: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1959: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:369: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:370: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:371: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:372: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:381: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:382: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:383: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:384: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:386: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:387: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:388: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:389: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:391: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:392: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:393: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:394: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:396: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:397: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:398: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:399: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:408: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:409: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:410: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:411: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:413: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:414: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:415: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:416: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:434: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:435: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:436: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:437: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:439: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:440: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:441: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:442: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:490: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:491: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:492: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:493: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:497: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:498: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:499: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:500: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:526: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:527: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:528: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:529: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:555: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:556: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:557: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:558: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:584: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:585: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:586: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:587: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:697: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:698: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:699: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:700: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:707: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:708: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:709: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:710: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:712: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:713: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:714: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:715: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:717: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:718: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:719: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:720: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:722: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:723: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:724: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:725: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:733: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:734: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:735: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:736: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:738: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:739: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:740: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:741: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:757: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:758: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:759: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:760: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:762: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:763: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:764: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:765: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:814: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:815: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:816: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:817: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:821: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:822: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:823: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:824: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:850: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:851: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:852: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:853: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:879: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:880: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:881: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:882: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:908: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:909: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:910: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:911: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1052: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1053: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1054: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1055: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1062: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1063: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1064: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1065: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1067: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1068: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1069: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1070: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1072: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1073: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1074: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1075: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1077: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1078: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1079: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1080: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1088: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1089: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1090: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1091: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1093: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1094: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1095: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1096: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1125: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1126: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1127: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1128: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1130: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1131: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1132: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1133: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1458: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1462: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1466: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1470: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1660: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1664: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1668: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1672: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:1959: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2082: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2087: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2135: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2139: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2143: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2147: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2166: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2171: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2176: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2181: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2186: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2191: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2208: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2212: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2216: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2220: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2224: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2228: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2232: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2236: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2240: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2244: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2248: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2252: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2257: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2261: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2265: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2269: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2273: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2277: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2281: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2285: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2289: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2293: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2297: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2301: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2327: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2331: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2335: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2339: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2343: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2347: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2351: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2355: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2359: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2363: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2367: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2376: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2380: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2384: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2388: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2392: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2396: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2400: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2404: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2408: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2412: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2416: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2432: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../hdl/Convnet_top.v:2437: unsigned to signed assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 207 in file
+	'../hdl/Convnet_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           208            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 268 in file
+	'../hdl/Convnet_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           270            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 303 in file
+	'../hdl/Convnet_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           304            |    auto/auto     |
+|           362            |    auto/auto     |
+|           494            |    auto/auto     |
+|           691            |    auto/auto     |
+|           818            |    auto/auto     |
+|           1046           |    auto/auto     |
+===============================================
+Warning:  ../hdl/Convnet_top.v:1945: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ../hdl/Convnet_top.v:1949: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ../hdl/Convnet_top.v:1953: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  ../hdl/Convnet_top.v:1957: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+
+Statistics for case statements in always block at line 1188 in file
+	'../hdl/Convnet_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1196           |    auto/auto     |
+|           1267           |    auto/auto     |
+|           1504           |    auto/auto     |
+|           1675           |     auto/no      |
+|           1732           |    auto/auto     |
+|           1884           |    auto/auto     |
+|           1970           |     auto/no      |
+===============================================
+
+Statistics for case statements in always block at line 2002 in file
+	'../hdl/Convnet_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           2012           |    auto/auto     |
+|           2018           |    auto/auto     |
+|           2079           |    auto/auto     |
+|           2132           |    auto/auto     |
+|           2163           |    auto/auto     |
+|           2205           |    auto/auto     |
+|           2324           |    auto/auto     |
+|           2429           |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 2478 in file
+	'../hdl/Convnet_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           2485           |    auto/auto     |
+|           2491           |    auto/auto     |
+|           2517           |    auto/auto     |
+|           2542           |    auto/auto     |
+|           2566           |    auto/auto     |
+|           2620           |    auto/auto     |
+|           2722           |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine Convnet_top line 2758 in file
+		'../hdl/Convnet_top.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| convolved_temp_b0_reg | Flip-flop |  84   |  Y  | N  | N  | N  | Y  | N  | N  |
+| convolved_temp_b3_reg | Flip-flop |  84   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_raddr_a0_reg   | Flip-flop |   6   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_raddr_a1_reg   | Flip-flop |   6   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_raddr_a2_reg   | Flip-flop |   6   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_raddr_a3_reg   | Flip-flop |   6   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_raddr_b0_reg   | Flip-flop |   5   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_raddr_b1_reg   | Flip-flop |   5   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_raddr_b2_reg   | Flip-flop |   5   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_raddr_b3_reg   | Flip-flop |   5   |  Y  | N  | N  | N  | Y  | N  | N  |
+| sram_raddr_weight_reg | Flip-flop |  10   |  Y  | N  | N  | N  | Y  | N  | N  |
+|  sram_raddr_bias_reg  | Flip-flop |   7   |  Y  | N  | N  | N  | Y  | N  | N  |
+|    sram_wen_a0_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | Y  | N  |
+|    sram_wen_a1_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | Y  | N  |
+|    sram_wen_a2_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | Y  | N  |
+|    sram_wen_a3_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | Y  | N  |
+|    sram_wen_b0_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | Y  | N  |
+|    sram_wen_b1_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | Y  | N  |
+|    sram_wen_b2_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | Y  | N  |
+|    sram_wen_b3_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | Y  | N  |
+|  sram_wordmask_a_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | Y  | N  | N  |
+|  sram_wordmask_b_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_waddr_a_reg    | Flip-flop |   6   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_waddr_b_reg    | Flip-flop |   5   |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_wdata_a_reg    | Flip-flop |  192  |  Y  | N  | N  | N  | Y  | N  | N  |
+|   sram_wdata_b_reg    | Flip-flop |  192  |  Y  | N  | N  | N  | Y  | N  | N  |
+|       valid_reg       | Flip-flop |   1   |  N  | N  | N  | N  | Y  | N  | N  |
+|       state_reg       | Flip-flop |   3   |  Y  | N  | N  | N  | Y  | N  | N  |
+|        cnt_reg        | Flip-flop |  12   |  Y  | N  | N  | N  | Y  | N  | N  |
+| convolved_temp_b1_reg | Flip-flop |  84   |  Y  | N  | N  | N  | Y  | N  | N  |
+|       map2_reg        | Flip-flop |  432  |  Y  | N  | N  | N  | Y  | N  | N  |
+|       map0_reg        | Flip-flop |  432  |  Y  | N  | N  | N  | Y  | N  | N  |
+|       map3_reg        | Flip-flop |  432  |  Y  | N  | N  | N  | Y  | N  | N  |
+|       map1_reg        | Flip-flop |  432  |  Y  | N  | N  | N  | Y  | N  | N  |
+|    weight2_dw_reg     | Flip-flop |  432  |  Y  | N  | N  | N  | Y  | N  | N  |
+|    weight0_dw_reg     | Flip-flop |  432  |  Y  | N  | N  | N  | Y  | N  | N  |
+|    weight3_dw_reg     | Flip-flop |  432  |  Y  | N  | N  | N  | Y  | N  | N  |
+|    weight1_dw_reg     | Flip-flop |  432  |  Y  | N  | N  | N  | Y  | N  | N  |
+|      bias_dw_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | Y  | N  | N  |
+|  feature_map2_pw_reg  | Flip-flop |  192  |  Y  | N  | N  | N  | Y  | N  | N  |
+|  feature_map0_pw_reg  | Flip-flop |  192  |  Y  | N  | N  | N  | Y  | N  | N  |
+|  feature_map3_pw_reg  | Flip-flop |  192  |  Y  | N  | N  | N  | Y  | N  | N  |
+|  feature_map1_pw_reg  | Flip-flop |  192  |  Y  | N  | N  | N  | Y  | N  | N  |
+|     weight_pw_reg     | Flip-flop |  384  |  Y  | N  | N  | N  | Y  | N  | N  |
+|      bias_pw_reg      | Flip-flop |  96   |  Y  | N  | N  | N  | Y  | N  | N  |
+| convolved_temp_b2_reg | Flip-flop |  84   |  Y  | N  | N  | N  | Y  | N  | N  |
+=================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+| Convnet_top/1923 |   4    |    1    |      2       |
+| Convnet_top/1923 |   4    |    8    |      2       |
+| Convnet_top/1924 |   4    |    1    |      2       |
+| Convnet_top/1924 |   4    |    8    |      2       |
+| Convnet_top/1925 |   4    |    1    |      2       |
+| Convnet_top/1925 |   4    |    8    |      2       |
+| Convnet_top/1926 |   4    |    1    |      2       |
+| Convnet_top/1926 |   4    |    8    |      2       |
+| Convnet_top/1923 |   4    |    1    |      2       |
+| Convnet_top/1923 |   4    |    8    |      2       |
+| Convnet_top/1924 |   4    |    1    |      2       |
+| Convnet_top/1924 |   4    |    8    |      2       |
+| Convnet_top/1925 |   4    |    1    |      2       |
+| Convnet_top/1925 |   4    |    8    |      2       |
+| Convnet_top/1926 |   4    |    1    |      2       |
+| Convnet_top/1926 |   4    |    8    |      2       |
+| Convnet_top/1923 |   4    |    1    |      2       |
+| Convnet_top/1923 |   4    |    8    |      2       |
+| Convnet_top/1924 |   4    |    1    |      2       |
+| Convnet_top/1924 |   4    |    8    |      2       |
+| Convnet_top/1925 |   4    |    1    |      2       |
+| Convnet_top/1925 |   4    |    8    |      2       |
+| Convnet_top/1926 |   4    |    1    |      2       |
+| Convnet_top/1926 |   4    |    8    |      2       |
+| Convnet_top/1923 |   4    |    1    |      2       |
+| Convnet_top/1923 |   4    |    8    |      2       |
+| Convnet_top/1924 |   4    |    1    |      2       |
+| Convnet_top/1924 |   4    |    8    |      2       |
+| Convnet_top/1925 |   4    |    1    |      2       |
+| Convnet_top/1925 |   4    |    8    |      2       |
+| Convnet_top/1926 |   4    |    1    |      2       |
+| Convnet_top/1926 |   4    |    8    |      2       |
+======================================================
+Information:  Complex logic will not be considered for set/reset inference. (ELAB-2008)
+Presto compilation completed successfully. (Convnet_top)
+Elaborated 1 design.
+Current design is now 'Convnet_top'.
+1
+# Solve Multiple Instance
+set uniquify_naming_style "%s_mydesign_%d"
+%s_mydesign_%d
+uniquify
+1
+# link the design
+current_design $TOPLEVEL
+Current design is 'Convnet_top'.
+{Convnet_top}
+link
+
+  Linking design 'Convnet_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  Convnet_top                 /home/u108/u108061127/ICLAB/HW/HW5/EE4292_HW5_2022/syn/Convnet_top.db
+  slow_vdd1v2 (library)       /usr/cadtool/GPDK45/gsclib045_svt_v4.4/gsclib045/db/slow_vdd1v2_basicCells_wl.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+1
+source -echo -verbose 1_setting.tcl 
+# Setting Design and I/O Environment
+set_operating_conditions -library slow_vdd1v2 PVT_1P08V_125C
+Using operating conditions 'PVT_1P08V_125C' found in library 'slow_vdd1v2'.
+1
+# Assume outputs go to DFF and inputs also come from DFF
+set_driving_cell -library slow_vdd1v2 -lib_cell DFFHQX1 -pin {Q} [all_inputs]	
+1
+set_load [load_of "slow_vdd1v2/DFFHQX1/D"] [all_outputs]
+1
+# Setting wireload model
+set_wire_load_mode enclosed
+1
+set_wire_load_model -name "Large" $TOPLEVEL
+1
+# Setting Timing Constraints
+###  ceate your clock here
+create_clock -name clk -period $TEST_CYCLE  [get_ports clk]
+1
+###  set clock constrain
+set_ideal_network       [get_ports clk]
+1
+set_dont_touch_network  [all_clocks]
+1
+# I/O delay should depend on the real enironment. Here only shows an example of setting
+set_input_delay  [expr $TEST_CYCLE*0.5]  -clock clk [remove_from_collection [all_inputs] [get_ports clk]]
+1
+set_output_delay [expr $TEST_CYCLE*0.5]  -clock clk [all_outputs]
+1
+# Setting DRC Constraint
+# Defensive setting: default fanout_load 1.0 and our target max fanout # 20 => 1.0*20 = 20.0
+# max_transition and max_capacitance are given in the cell library
+set_max_fanout 20.0 $TOPLEVEL
+1
+# Area Constraint
+set_max_area   0
+1
+1
+source -echo -verbose 2_compile.tcl 
+# this cell's verilog will cause ncverilog to hang 
+# before synthesis settings
+set case_analysis_with_logic_constants true
+true
+set_fix_multiple_port_nets -feedthroughs -outputs -constants -buffer_constants
+1
+####check design####
+check_design > ./$RPT_DIR/check_design.log
+check_timing > ./$RPT_DIR/check_timing.log
+set_clock_gating_style -max_fanout 10
+
+Current clock gating style....
+Sequential cell: latch
+Minimum bank bitwidth: 3
+Minimum bank bitwidth for enhanced clock gating: 6
+Maximum fanout: 10
+Setup time for clock gate: 0.000000
+Hold time for clock gate: 0.000000
+Clock gating circuitry (positive edge): and
+Clock gating circuitry (negative edge): or
+ Note: inverter between clock gating circuitry 
+       and (negative edge) register clock pin.
+Control point insertion: none
+Control signal for control point: scan_enable
+Observation point insertion: false
+Observation logic depth: 5
+1
+# Synthesis all design (using : compile_ultra)
+# you can add "-gate_clock" to do gated-clock
+# you can add "-incremental" for higher performance
+compile_ultra -gate_clock -exact_map -no_autoungroup -no_seq_output_inversion -no_boundary_optimization
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.5 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.5 |     *     |
+============================================================================
+
+
+Information: There are 4268 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'Convnet_top'
+
+Loaded alib file './alib-52/slow_vdd1v2_basicCells_wl.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Convnet_top'
+Information: Added key list 'DesignWare' to design 'Convnet_top'. (DDB-72)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[1]' is removed because it is merged to 'sram_wordmask_b_reg[0]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[2]' is removed because it is merged to 'sram_wordmask_b_reg[0]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[3]' is removed because it is merged to 'sram_wordmask_b_reg[0]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[5]' is removed because it is merged to 'sram_wordmask_b_reg[4]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[6]' is removed because it is merged to 'sram_wordmask_b_reg[4]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[7]' is removed because it is merged to 'sram_wordmask_b_reg[4]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[9]' is removed because it is merged to 'sram_wordmask_b_reg[8]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[10]' is removed because it is merged to 'sram_wordmask_b_reg[8]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[11]' is removed because it is merged to 'sram_wordmask_b_reg[8]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[13]' is removed because it is merged to 'sram_wordmask_b_reg[12]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[14]' is removed because it is merged to 'sram_wordmask_b_reg[12]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_b_reg[15]' is removed because it is merged to 'sram_wordmask_b_reg[12]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[14]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[13]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[12]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[11]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[10]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[9]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[8]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[7]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[6]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[5]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[4]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[3]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[2]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[1]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+Information: In design 'Convnet_top', the register 'sram_wordmask_a_reg[0]' is removed because it is merged to 'sram_wordmask_a_reg[15]'. (OPT-1215)
+ Implement Synthetic for 'Convnet_top'.
+  Processing 'Convnet_top_DW_div_uns_J1_0'
+  Processing 'Convnet_top_DW_div_uns_J1_1'
+  Processing 'Convnet_top_DW_div_uns_J1_2'
+  Processing 'Convnet_top_DW_div_uns_J1_3'
+  Processing 'Convnet_top_DW_div_uns_J1_4'
+  Processing 'Convnet_top_DW_div_uns_J1_5'
+  Processing 'Convnet_top_DW_div_uns_J1_6'
+  Processing 'Convnet_top_DW_div_uns_J1_7'
+  Processing 'Convnet_top_DW_div_uns_J1_8'
+  Processing 'Convnet_top_DW_div_uns_J1_9'
+  Processing 'Convnet_top_DW_div_uns_J1_10'
+  Processing 'Convnet_top_DW_div_uns_J1_11'
+  Processing 'Convnet_top_DW_div_uns_J1_12'
+  Processing 'Convnet_top_DW_div_uns_J1_13'
+  Processing 'Convnet_top_DW_div_uns_J1_14'
+  Processing 'SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_0'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIELO' in the library 'slow_vdd1v2' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHI' in the library 'slow_vdd1v2' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_RSOP_29326, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_RSOP_29327, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_RSOP_29328, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_RSOP_29329, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_RSOP_29330, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_RSOP_29331, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29376J1_166_1036_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29375J1_165_1036_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29374J1_164_1036_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29373J1_163_1036_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29372J1_162_5000_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29371J1_161_5000_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29370J1_160_5000_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29369J1_159_5000_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29368J1_158_4122_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29367J1_157_2358_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29366J1_156_2358_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29365J1_155_2358_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29364J1_154_2358_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29363J1_153_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29362J1_152_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29361J1_151_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29360J1_150_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29359J1_149_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29358J1_148_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29357J1_147_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29356J1_146_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29355J1_145_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29354J1_144_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29353J1_143_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29352J1_142_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29351J1_141_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29350J1_140_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29349J1_139_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29348J1_138_9644_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29347J1_137_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29346J1_136_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29345J1_135_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29344J1_134_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29343J1_133_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29342J1_132_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29341J1_131_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29340J1_130_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29339J1_129_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29338J1_128_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29337J1_127_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29336J1_126_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29335J1_125_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29334J1_124_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29333J1_123_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29332J1_122_9660_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_div_uns_J1_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_div_uns_J1_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_div_uns_J1_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_div_uns_J1_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_mult_uns_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_div_uns_J1_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW01_sub_J1_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_div_uns_J1_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW01_inc_J1_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW01_inc_J1_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW01_inc_J1_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW01_inc_J1_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW01_inc_J1_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_div_uns_J1_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_div_uns_J1_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_div_uns_J1_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW01_inc_J1_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW_div_uns_J1_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DW01_inc_J1_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29122J1_167_8037_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29167J1_176_9317_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29212J1_185_8549_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29257J1_194_9829_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29297J1_203_5675_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Convnet_top_DP_OP_29332J1_206_4881_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_31, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_33, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_34, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_35, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_36, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_37, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_38, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_39, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_40, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_41, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_42, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_43, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_44, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_45, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_46, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_47, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_48, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_49, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_50, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_51, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_52, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_53, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_54, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_55, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_56, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_57, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_58, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_59, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_60, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_61, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_62, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_63, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_64, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_65, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_66, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_67, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_68, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_69, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_70, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_71, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_72, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_73, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_74, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_75, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_76, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_77, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_78, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_79, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_80, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_81, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_82, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_83, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_84, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_85, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_86, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_87, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_88, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_89, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_90, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_91, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_92, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_93, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_94, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_95, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_96, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_97, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_98, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_99, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_100, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_101, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_102, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_103, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_104, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_105, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_106, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_107, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_108, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_109, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_110, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_111, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_112, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_113, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_114, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_115, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_116, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_117, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_118, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_119, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_120, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_121, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_122, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_123, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_124, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_125, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_126, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_127, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_128, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_129, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_130, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_131, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_132, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_133, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_134, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_135, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_136, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_137, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_138, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_139, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_140, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_141, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_142, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_143, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_144, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_145, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_146, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_147, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_148, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_149, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_150, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_151, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_152, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_153, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_154, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_155, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_156, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_157, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_158, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_159, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_160, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_161, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_162, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_163, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_164, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_165, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_166, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_167, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_168, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_169, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_170, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_171, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_172, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_173, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_174, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_175, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_176, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_177, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_178, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_179, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_180, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_181, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_182, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_183, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_184, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_185, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_186, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_187, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_188, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_189, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_190, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_191, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_192, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_193, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_194, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_195, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_196, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_197, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_198, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_199, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_200, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_201, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_202, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_203, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_204, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_205, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_206, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_207, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_208, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_209, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_210, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_211, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_212, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_213, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_214, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_215, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_216, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_217, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_218, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_219, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_220, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_221, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_222, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_223, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_224, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_225, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_226, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_227, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_228, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_229, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_230, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_231, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_232, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_233, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_234, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_235, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_236, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_237, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_238, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_239, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_240, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_241, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_242, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_243, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_244, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_245, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_246, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_247, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_248, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_249, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_250, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_251, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_252, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_253, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_254, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_255, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_256, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_257, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_258, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_259, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_260, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_261, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_262, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_263, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_264, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_265, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_266, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_267, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_268, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_269, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_270, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_271, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_272, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_273, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_274, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_275, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_276, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_277, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_278, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_279, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_280, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_281, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_282, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_283, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_284, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_285, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_286, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_287, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_288, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_289, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_290, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_291, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_292, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_293, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_294, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_295, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_296, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_297, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_298, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_299, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_300, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_301, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_302, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_303, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_304, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_305, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_306, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_307, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_308, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_309, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_310, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_311, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_312, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_313, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_314, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_315, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_316, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_317, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_318, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_319, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_320, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_321, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_322, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_323, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_324, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_325, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_326, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_327, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_328, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_329, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_330, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_331, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_332, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_333, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_334, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_335, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_336, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_337, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_338, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_339, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_340, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_341, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_342, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_343, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_344, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_345, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_346, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_347, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_348, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_349, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_350, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_351, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_352, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_353, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_354, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_355, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_356, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_357, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_358, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_359, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_360, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_361, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_362, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_363, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_364, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_365, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_366, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_367, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_368, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_369, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_370, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_371, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_372, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_373, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_374, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_375, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_376, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_377, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_378, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_379, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_380, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_381, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_382, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_383, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_384, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_385, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_386, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_387, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_388, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_389, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_390, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_391, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_392, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_393, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_394, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_395, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_396, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_397, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_398, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_399, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_400, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_401, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_402, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_403, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_404, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_405, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_406, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_407, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_408, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_409, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_410, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_411, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_412, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_413, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_414, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_415, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_416, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_417, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_418, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_419, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_420, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_421, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_422, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_423, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_424, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_425, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_426, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_427, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_428, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_429, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_430, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_431, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_432, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_433, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_434, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_435, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_436, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_437, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_438, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_439, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_440, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_441, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_442, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_443, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_444, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_445, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_446, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_447, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_448, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_449, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_450, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_451, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_452, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_453, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_454, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_455, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_456, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_457, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_458, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_459, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_460, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_461, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_462, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_463, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_464, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_465, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_466, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_467, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_468, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_469, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_470, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_471, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_472, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_473, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_474, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_475, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_476, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_477, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_478, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_479, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_480, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_481, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_482, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_483, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_484, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_485, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_486, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_487, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_488, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_489, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_490, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_491, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_492, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_493, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_494, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_495, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_496, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_497, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_498, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_499, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_500, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_501, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_502, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_503, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_504, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_505, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_506, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_507, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_508, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_509, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_510, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_511, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_512, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_513, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_514, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_515, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_516, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_517, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_518, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_519, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_520, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_521, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design Convnet_top. (PWR-730)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Structuring 'Convnet_top_DW_div_uns_0'
+  Mapping 'Convnet_top_DW_div_uns_0'
+  Structuring 'Convnet_top_DW_div_uns_1'
+  Mapping 'Convnet_top_DW_div_uns_1'
+  Structuring 'Convnet_top_DW_div_uns_2'
+  Mapping 'Convnet_top_DW_div_uns_2'
+  Structuring 'Convnet_top_DW_div_uns_3'
+  Mapping 'Convnet_top_DW_div_uns_3'
+  Structuring 'Convnet_top_DW_div_uns_4'
+  Mapping 'Convnet_top_DW_div_uns_4'
+  Mapping 'Convnet_top_DW01_add_0'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'Convnet_top_DW_div_uns_4'
+  Structuring 'Convnet_top_DW_div_uns_5'
+  Mapping 'Convnet_top_DW_div_uns_5'
+  Structuring 'Convnet_top_DW_div_uns_6'
+  Mapping 'Convnet_top_DW_div_uns_6'
+  Structuring 'Convnet_top_DW_div_uns_7'
+  Mapping 'Convnet_top_DW_div_uns_7'
+  Structuring 'Convnet_top_DW_div_uns_8'
+  Mapping 'Convnet_top_DW_div_uns_8'
+  Structuring 'Convnet_top_DW_div_uns_9'
+  Mapping 'Convnet_top_DW_div_uns_9'
+  Structuring 'Convnet_top_DW_div_uns_10'
+  Mapping 'Convnet_top_DW_div_uns_10'
+  Structuring 'Convnet_top_DW_div_uns_11'
+  Mapping 'Convnet_top_DW_div_uns_11'
+  Mapping 'Convnet_top_DW01_add_1'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'Convnet_top_DW01_add_2'
+  Mapping 'Convnet_top_DW01_add_3'
+  Mapping 'Convnet_top_DW01_add_4'
+  Mapping 'Convnet_top_DW01_add_5'
+  Mapping 'Convnet_top_DW01_add_6'
+  Mapping 'Convnet_top_DW01_add_7'
+  Mapping 'Convnet_top_DW01_add_8'
+  Mapping 'Convnet_top_DW01_add_9'
+  Mapping 'Convnet_top_DW01_add_10'
+  Mapping 'Convnet_top_DW_div_uns_11'
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:17:06  400586.7      4.06    1754.7    3584.0                           19966048.0000
+    0:17:19  400483.4      4.09    1755.0    3702.4                           19962426.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:20:58  322922.8      3.94    1476.4     469.3                           8902757.0000
+  Mapping 'Convnet_top_DP_OP_29368J1_158_4122_0'
+    0:21:02  323130.2      4.30    1587.5     504.1                           8917805.0000
+    0:21:04  323101.4      4.01    1500.9     497.6                           8915550.0000
+  Mapping 'Convnet_top_DP_OP_29376J1_166_1036_0'
+  Mapping 'Convnet_top_DP_OP_29375J1_165_1036_0'
+  Mapping 'Convnet_top_DP_OP_29374J1_164_1036_0'
+  Mapping 'Convnet_top_DW01_add_17'
+    0:22:01  322978.7      4.08    1373.8     468.6                           8905215.0000
+    0:22:02  322967.9      3.58    1346.7     468.6                           8904369.0000
+  Mapping 'Convnet_top_DW01_add_18'
+    0:22:02  322978.7      4.08    1373.8     468.6                           8905215.0000
+    0:22:02  322967.9      3.58    1346.7     468.6                           8904369.0000
+  Mapping 'Convnet_top_DW01_add_19'
+    0:22:03  322976.7      4.06    1373.8     468.6                           8905036.0000
+    0:22:03  322966.6      3.55    1346.2     468.6                           8904237.0000
+  Mapping 'Convnet_top_DW01_add_20'
+  Mapping 'Convnet_top_DW01_add_21'
+  Mapping 'Convnet_top_DW01_add_22'
+  Mapping 'Convnet_top_DW01_add_35'
+    0:22:20  323838.3      3.80    1437.0     468.6                           8963494.0000
+    0:22:22  323820.1      3.58    1435.1     468.6                           8962043.0000
+  Mapping 'Convnet_top_DW01_add_36'
+    0:22:23  323838.3      3.80    1437.0     468.6                           8963494.0000
+    0:22:24  323820.1      3.58    1435.1     468.6                           8962043.0000
+  Mapping 'Convnet_top_DW01_add_37'
+    0:22:25  323838.3      3.80    1437.0     468.6                           8963494.0000
+    0:22:26  323815.7      3.58    1434.9     468.6                           8961696.0000
+  Mapping 'Convnet_top_DW01_add_38'
+    0:22:27  323838.3      3.78    1437.0     468.6                           8963494.0000
+    0:22:28  323820.1      3.58    1435.1     468.6                           8962043.0000
+  Mapping 'Convnet_top_DW01_add_39'
+    0:22:29  323838.3      3.80    1437.0     468.6                           8963494.0000
+    0:22:31  323820.1      3.59    1435.1     468.6                           8962043.0000
+  Mapping 'Convnet_top_DW01_add_40'
+    0:22:32  323838.3      3.80    1437.0     468.6                           8963494.0000
+    0:22:33  323820.1      3.59    1435.1     468.6                           8962043.0000
+  Mapping 'Convnet_top_DW01_add_41'
+    0:22:34  323838.3      3.81    1437.0     468.6                           8963494.0000
+    0:22:35  323815.7      3.58    1434.8     468.6                           8961696.0000
+  Mapping 'Convnet_top_DW01_add_42'
+    0:22:36  323838.3      3.78    1437.0     468.6                           8963494.0000
+    0:22:37  323820.1      3.59    1435.1     468.6                           8962043.0000
+  Mapping 'Convnet_top_DW01_add_43'
+    0:22:38  323838.3      3.80    1437.0     468.6                           8963494.0000
+    0:22:40  323820.1      3.58    1435.1     468.6                           8962043.0000
+  Mapping 'Convnet_top_DW01_add_44'
+    0:22:41  323838.3      3.80    1437.0     468.6                           8963494.0000
+    0:22:42  323820.1      3.58    1435.1     468.6                           8962043.0000
+  Mapping 'Convnet_top_DW01_add_45'
+    0:22:43  323838.3      3.80    1437.0     468.6                           8963494.0000
+    0:22:44  323820.1      3.58    1435.1     468.6                           8962043.0000
+  Mapping 'Convnet_top_DW01_add_46'
+    0:22:45  323838.3      3.77    1437.0     468.6                           8963494.0000
+    0:22:46  323820.1      3.58    1435.1     468.6                           8962043.0000
+    0:25:03  325906.1      1.52     657.8     526.7                           8988261.0000
+    0:25:03  325906.1      1.52     657.8     526.7                           8988261.0000
+    0:25:03  325906.1      1.52     657.8     526.7                           8988261.0000
+    0:28:25  306594.3      1.43     605.0     425.4                           8616805.0000
+    0:28:53  303192.8      1.96     787.5    6872.9                           8516972.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:31:36  303007.0      1.91     769.9    6823.4                           8430597.0000
+    0:31:56  303240.2      1.90     762.3    6803.0                           8363325.0000
+    0:32:22  301900.9      1.86     751.6    6798.2                           8258664.0000
+    0:32:43  301018.2      1.86     746.7    6797.1                           8203606.0000
+    0:32:52  300180.7      1.86     746.1    6793.3                           8176585.5000
+    0:32:58  299176.5      1.86     744.0    6785.3                           8147863.0000
+    0:33:09  298387.2      1.81     726.1    6777.5                           8122167.5000
+    0:33:20  297822.8      1.81     722.8    6764.3                           8104434.0000
+    0:33:27  297574.2      1.81     721.3    6764.1                           8096167.0000
+    0:33:49  298449.0      1.28     500.9    5792.4                           8090735.5000
+    0:33:52  298584.5      1.28     490.6    5738.8                           8088134.5000
+    0:33:53  298584.5      1.28     490.6    5738.8                           8088134.5000
+    0:34:33  297559.4      1.28     493.4    5670.6                           7957514.5000
+    0:34:33  297559.4      1.28     493.4    5670.6                           7957514.5000
+    0:35:02  297961.2      1.03     400.1    5623.7                           7982276.0000
+    0:35:02  297961.2      1.03     400.1    5623.7                           7982276.0000
+    0:35:05  298009.0      0.97     384.5    5576.8                           7981212.0000
+    0:35:05  298009.0      0.97     384.5    5576.8                           7981212.0000
+    0:37:23  300482.4      0.75     281.8    5243.7                           8121334.5000
+    0:37:23  300482.4      0.75     281.8    5243.7                           8121334.5000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:40:33  303183.6      0.00       0.0    5453.5                           8221076.0000
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+    0:40:54  303570.7      0.05       0.5       4.7 net899193                 8203272.5000
+    0:40:57  303589.8      0.00       0.0       2.7                           8202224.0000
+    0:40:57  303589.8      0.00       0.0       2.7                           8202224.0000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:40:57  303589.8      0.00       0.0       2.7                           8202224.0000
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+  Global Optimization (Phase 54)
+    0:42:33  303530.8      0.00       0.0       2.8                           7750170.5000
+    0:42:33  303530.8      0.00       0.0       2.8                           7750170.5000
+    0:42:33  303530.8      0.00       0.0       2.8                           7750170.5000
+    0:43:06  301831.8      0.00       0.0       2.7                           7833814.0000
+    0:43:07  301831.8      0.00       0.0       2.7                           7833814.0000
+    0:43:10  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:10  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:10  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:10  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:10  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+    0:43:11  301831.1      0.00       0.0       2.7                           7833770.5000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:43:27  301829.0      0.00       0.0       2.7                           7833744.0000
+    0:43:53  297595.4      0.09       8.2       0.1                           8011687.5000
+    0:44:05  297947.0      0.00       0.0     806.1                           8013512.5000
+    0:44:05  297947.0      0.00       0.0     806.1                           8013512.5000
+    0:44:39  299798.6      0.00       0.0     806.3                           7897632.0000
+    0:44:49  299729.1      0.00       0.0     757.3                           7894363.0000
+    0:45:11  299686.1      0.00       0.0     755.3                           7892578.0000
+    0:45:24  299665.5      0.00       0.0     755.3                           7891831.5000
+    0:45:30  299684.7      0.00       0.0     755.3                           7888370.0000
+    0:45:37  300052.0      0.00       0.0     755.3                           7866587.5000
+    0:45:50  300265.7      0.00       0.0     435.3 net878915                 7853736.5000
+    0:45:54  300323.2      0.00       0.0       2.3 net806007                 7854689.5000
+    0:45:55  300327.0      0.00       0.0       0.3                           7854636.5000
+    0:45:55  300327.0      0.00       0.0       0.3                           7854636.5000
+    0:45:55  300327.0      0.00       0.0       0.3                           7854636.5000
+    0:45:55  300327.0      0.00       0.0       0.3                           7854636.5000
+    0:45:56  300327.0      0.00       0.0       0.3                           7854636.5000
+    0:45:56  300327.0      0.00       0.0       0.3                           7854636.5000
+    0:47:49  299860.1      0.00       0.0       0.5                           7869840.0000
+Loading db file '/usr/cadtool/GPDK45/gsclib045_svt_v4.4/gsclib045/db/slow_vdd1v2_basicCells_wl.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'Convnet_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk_gate_convolved_temp_b0_reg[0]_0/net567090': 1463 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# compile_ultra -incremental -exact_map -no_autoungroup -no_seq_output_inversion -no_boundary_optimization
+# remove dummy ports
+remove_unconnected_ports [get_cells -hierarchical *]
+1
+remove_unconnected_ports [get_cells -hierarchical *] -blast_buses
+1
+1
+source -echo -verbose 3_report.tcl 
+###-----------------------------Naming Rules----------------------------
+set bus_inference_style {%s[%d]}
+%s[%d]
+set bus_naming_style {%s[%d]}
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -rules verilog -hierarchy
+1
+define_name_rules name_rule -allowed {a-z A-Z 0-9 _} -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed {a-z A-Z 0-9 _[]} -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+###--------------------------Netlist-related------------------------------------
+write -format ddc     -hierarchy -output ./netlist/${TOPLEVEL}_syn.ddc
+Writing ddc file './netlist/Convnet_top_syn.ddc'.
+1
+write -format verilog -hierarchy -output ./netlist/${TOPLEVEL}_syn.v
+Writing verilog file '/home/u108/u108061127/ICLAB/HW/HW5/EE4292_HW5_2022/syn/netlist/Convnet_top_syn.v'.
+1
+write_sdf -version 1.0  -context verilog ./netlist/${TOPLEVEL}_syn.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/u108/u108061127/ICLAB/HW/HW5/EE4292_HW5_2022/syn/netlist/Convnet_top_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'Convnet_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+1
+write_sdc ./netlist/${TOPLEVEL}_syn.sdc
+1
+write_saif -output ./netlist/${TOPLEVEL}_syn.saif 
+Information: Writing backward SAIF information to file './netlist/Convnet_top_syn.saif'. (PWR-458)
+1
+###---------------------------Syntheis result reports----------------------------
+# ===== Timing report =====
+report_timing -delay min -max_paths 4 > ./report/report_hold_${TOPLEVEL}.out
+report_timing -delay max -max_paths 4 > ./report/report_setup_${TOPLEVEL}.out
+report_timing -path full -delay max -max_paths 4 -nworst 2 -significant_digits 4 > ./report/report_time_${TOPLEVEL}.out
+# ===== Area report =====
+report_area -hier  > ./report/report_area_${TOPLEVEL}.out
+# ===== Power report =====
+report_power -hier > ./report/report_power_${TOPLEVEL}.out
+# ===== violations =====
+report_constraint -all_violators > ./report/report_violation_${TOPLEVEL}.out
+# ===== resources =====
+report_resources -hierarchy > ./report/report_resources_${TOPLEVEL}.outexit
+
+Memory usage for this session 4439 Mbytes.
+Memory usage for this session including child processes 4439 Mbytes.
+CPU usage for this session 3233 seconds ( 0.90 hours ).
+Elapsed time for this session 3290 seconds ( 0.91 hours ).
+
+Thank you...

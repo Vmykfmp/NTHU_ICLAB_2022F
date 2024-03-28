@@ -1,0 +1,210 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 2
+        -max_paths 4
+Design : Convnet_top
+Version: R-2020.09-SP5
+Date   : Thu Dec  8 23:41:11 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P08V_125C   Library: slow_vdd1v2
+Wire Load Model Mode: enclosed
+
+  Startpoint: srst_n (input port clocked by clk)
+  Endpoint: clk_gate_weight2_dw_reg_32_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Convnet_top        Large                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  4.0000     4.0000 r
+  srst_n (in)                                           0.0232     4.0232 r
+  U33360/Y (INVX2)                                      0.1143     4.1375 f
+  U33359/Y (BUFX3)                                      0.0907     4.2282 f
+  U27365/Y (INVX1)                                      0.0837     4.3120 r
+  U28581/Y (OAI21X2)                                    0.1508     4.4628 f
+  U33344/Y (BUFX2)                                      0.1019     4.5647 f
+  U33341/Y (BUFX3)                                      0.0845     4.6492 f
+  clk_gate_weight2_dw_reg_32_/EN (SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_278)
+                                                        0.0000     4.6492 f
+  clk_gate_weight2_dw_reg_32_/latch/D (TLATNXL)         0.0137     4.6629 f
+  data arrival time                                                4.6629
+
+  clock clk (fall edge)                                 4.0000     4.0000
+  clock network delay (ideal)                           0.0000     4.0000
+  clk_gate_weight2_dw_reg_32_/latch/GN (TLATNXL)        0.0000     4.0000 f
+  time borrowed from endpoint                           0.6629     4.6629
+  data required time                                               4.6629
+  --------------------------------------------------------------------------
+  data required time                                               4.6629
+  data arrival time                                               -4.6629
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                               4.0000   
+  library setup time                                   -0.0393   
+  --------------------------------------------------------------
+  max time borrow                                       3.9607   
+  actual time borrow                                    0.6629   
+  --------------------------------------------------------------
+
+
+  Startpoint: srst_n (input port clocked by clk)
+  Endpoint: clk_gate_weight0_dw_reg_9_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Convnet_top        Large                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  4.0000     4.0000 r
+  srst_n (in)                                           0.0232     4.0232 r
+  U33360/Y (INVX2)                                      0.1143     4.1375 f
+  U33359/Y (BUFX3)                                      0.0907     4.2282 f
+  U27365/Y (INVX1)                                      0.0837     4.3120 r
+  U28581/Y (OAI21X2)                                    0.1508     4.4628 f
+  U33344/Y (BUFX2)                                      0.1019     4.5647 f
+  U33341/Y (BUFX3)                                      0.0845     4.6492 f
+  clk_gate_weight0_dw_reg_9_/EN (SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_261)
+                                                        0.0000     4.6492 f
+  clk_gate_weight0_dw_reg_9_/latch/D (TLATNXL)          0.0137     4.6629 f
+  data arrival time                                                4.6629
+
+  clock clk (fall edge)                                 4.0000     4.0000
+  clock network delay (ideal)                           0.0000     4.0000
+  clk_gate_weight0_dw_reg_9_/latch/GN (TLATNXL)         0.0000     4.0000 f
+  time borrowed from endpoint                           0.6629     4.6629
+  data required time                                               4.6629
+  --------------------------------------------------------------------------
+  data required time                                               4.6629
+  data arrival time                                               -4.6629
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                               4.0000   
+  library setup time                                   -0.0393   
+  --------------------------------------------------------------
+  max time borrow                                       3.9607   
+  actual time borrow                                    0.6629   
+  --------------------------------------------------------------
+
+
+  Startpoint: srst_n (input port clocked by clk)
+  Endpoint: clk_gate_weight0_dw_reg_10_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Convnet_top        Large                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  4.0000     4.0000 r
+  srst_n (in)                                           0.0232     4.0232 r
+  U33360/Y (INVX2)                                      0.1143     4.1375 f
+  U33359/Y (BUFX3)                                      0.0907     4.2282 f
+  U27365/Y (INVX1)                                      0.0837     4.3120 r
+  U28581/Y (OAI21X2)                                    0.1508     4.4628 f
+  U33344/Y (BUFX2)                                      0.1019     4.5647 f
+  U33341/Y (BUFX3)                                      0.0845     4.6492 f
+  clk_gate_weight0_dw_reg_10_/EN (SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_260)
+                                                        0.0000     4.6492 f
+  clk_gate_weight0_dw_reg_10_/latch/D (TLATNXL)         0.0137     4.6629 f
+  data arrival time                                                4.6629
+
+  clock clk (fall edge)                                 4.0000     4.0000
+  clock network delay (ideal)                           0.0000     4.0000
+  clk_gate_weight0_dw_reg_10_/latch/GN (TLATNXL)        0.0000     4.0000 f
+  time borrowed from endpoint                           0.6629     4.6629
+  data required time                                               4.6629
+  --------------------------------------------------------------------------
+  data required time                                               4.6629
+  data arrival time                                               -4.6629
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                               4.0000   
+  library setup time                                   -0.0393   
+  --------------------------------------------------------------
+  max time borrow                                       3.9607   
+  actual time borrow                                    0.6629   
+  --------------------------------------------------------------
+
+
+  Startpoint: srst_n (input port clocked by clk)
+  Endpoint: clk_gate_weight0_dw_reg_11_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Convnet_top        Large                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  4.0000     4.0000 r
+  srst_n (in)                                           0.0232     4.0232 r
+  U33360/Y (INVX2)                                      0.1143     4.1375 f
+  U33359/Y (BUFX3)                                      0.0907     4.2282 f
+  U27365/Y (INVX1)                                      0.0837     4.3120 r
+  U28581/Y (OAI21X2)                                    0.1508     4.4628 f
+  U33344/Y (BUFX2)                                      0.1019     4.5647 f
+  U33341/Y (BUFX3)                                      0.0845     4.6492 f
+  clk_gate_weight0_dw_reg_11_/EN (SNPS_CLOCK_GATE_HIGH_Convnet_top_mydesign_259)
+                                                        0.0000     4.6492 f
+  clk_gate_weight0_dw_reg_11_/latch/D (TLATNXL)         0.0137     4.6629 f
+  data arrival time                                                4.6629
+
+  clock clk (fall edge)                                 4.0000     4.0000
+  clock network delay (ideal)                           0.0000     4.0000
+  clk_gate_weight0_dw_reg_11_/latch/GN (TLATNXL)        0.0000     4.0000 f
+  time borrowed from endpoint                           0.6629     4.6629
+  data required time                                               4.6629
+  --------------------------------------------------------------------------
+  data required time                                               4.6629
+  data arrival time                                               -4.6629
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                               4.0000   
+  library setup time                                   -0.0393   
+  --------------------------------------------------------------
+  max time borrow                                       3.9607   
+  actual time borrow                                    0.6629   
+  --------------------------------------------------------------
+
+
+1
