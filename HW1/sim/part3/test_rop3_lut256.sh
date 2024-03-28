@@ -1,0 +1,1 @@
+vcs -f test_rop3_lut256.f -full64 -R -debug_access+all +v2k +define+N=4
