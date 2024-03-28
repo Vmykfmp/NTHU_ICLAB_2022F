@@ -1,0 +1,224 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 2
+        -max_paths 4
+Design : enigma_part3
+Version: R-2020.09-SP5
+Date   : Tue Nov  1 02:02:25 2022
+****************************************
+
+Operating Conditions: PVT_1P08V_125C   Library: slow_vdd1v2
+Wire Load Model Mode: enclosed
+
+  Startpoint: table_idx[1]
+              (input port clocked by clk)
+  Endpoint: clk_gate_rotorB_table_reg_1_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  enigma_part3       Large                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  5.2500     5.2500 r
+  table_idx[1] (in)                                     0.0067     5.2567 r
+  U13020/Y (NOR2BXL)                                    0.0732     5.3300 r
+  U10696/Y (AND2XL)                                     0.0890     5.4190 r
+  U10978/Y (INVX1)                                      0.0891     5.5081 f
+  U11830/Y (OA22X4)                                     0.1489     5.6570 f
+  U10827/Y (INVX1)                                      0.0671     5.7240 r
+  U10826/Y (AOI2BB1X1)                                  0.1054     5.8295 r
+  U10817/Y (BUFX2)                                      0.1038     5.9333 r
+  U10053/Y (BUFX3)                                      0.0884     6.0216 r
+  U12280/Y (OAI21XL)                                    0.0642     6.0858 f
+  clk_gate_rotorB_table_reg_1_/EN (SNPS_CLOCK_GATE_HIGH_enigma_part3_mydesign_193)
+                                                        0.0000     6.0858 f
+  clk_gate_rotorB_table_reg_1_/latch/D (TLATNXL)        0.0275     6.1133 f
+  data arrival time                                                6.1133
+
+  clock clk (fall edge)                                 5.2500     5.2500
+  clock network delay (ideal)                           0.0000     5.2500
+  clk_gate_rotorB_table_reg_1_/latch/GN (TLATNXL)       0.0000     5.2500 f
+  time borrowed from endpoint                           0.8633     6.1133
+  data required time                                               6.1133
+  --------------------------------------------------------------------------
+  data required time                                               6.1133
+  data arrival time                                               -6.1133
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                               5.2500   
+  library setup time                                   -0.0441   
+  --------------------------------------------------------------
+  max time borrow                                       5.2059   
+  actual time borrow                                    0.8633   
+  --------------------------------------------------------------
+
+
+  Startpoint: table_idx[1]
+              (input port clocked by clk)
+  Endpoint: clk_gate_rotorB_table_reg_2_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  enigma_part3       Large                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  5.2500     5.2500 r
+  table_idx[1] (in)                                     0.0067     5.2567 r
+  U13020/Y (NOR2BXL)                                    0.0732     5.3300 r
+  U10696/Y (AND2XL)                                     0.0890     5.4190 r
+  U10978/Y (INVX1)                                      0.0891     5.5081 f
+  U11830/Y (OA22X4)                                     0.1489     5.6570 f
+  U10827/Y (INVX1)                                      0.0671     5.7240 r
+  U10826/Y (AOI2BB1X1)                                  0.1054     5.8295 r
+  U10817/Y (BUFX2)                                      0.1038     5.9333 r
+  U10053/Y (BUFX3)                                      0.0884     6.0216 r
+  U10894/Y (OAI21XL)                                    0.0642     6.0858 f
+  clk_gate_rotorB_table_reg_2_/EN (SNPS_CLOCK_GATE_HIGH_enigma_part3_mydesign_192)
+                                                        0.0000     6.0858 f
+  clk_gate_rotorB_table_reg_2_/latch/D (TLATNXL)        0.0275     6.1133 f
+  data arrival time                                                6.1133
+
+  clock clk (fall edge)                                 5.2500     5.2500
+  clock network delay (ideal)                           0.0000     5.2500
+  clk_gate_rotorB_table_reg_2_/latch/GN (TLATNXL)       0.0000     5.2500 f
+  time borrowed from endpoint                           0.8633     6.1133
+  data required time                                               6.1133
+  --------------------------------------------------------------------------
+  data required time                                               6.1133
+  data arrival time                                               -6.1133
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                               5.2500   
+  library setup time                                   -0.0437   
+  --------------------------------------------------------------
+  max time borrow                                       5.2063   
+  actual time borrow                                    0.8633   
+  --------------------------------------------------------------
+
+
+  Startpoint: table_idx[1]
+              (input port clocked by clk)
+  Endpoint: clk_gate_rotorB_table_reg_3_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  enigma_part3       Large                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  5.2500     5.2500 r
+  table_idx[1] (in)                                     0.0067     5.2567 r
+  U13020/Y (NOR2BXL)                                    0.0732     5.3300 r
+  U10696/Y (AND2XL)                                     0.0890     5.4190 r
+  U10978/Y (INVX1)                                      0.0891     5.5081 f
+  U11830/Y (OA22X4)                                     0.1489     5.6570 f
+  U10827/Y (INVX1)                                      0.0671     5.7240 r
+  U10826/Y (AOI2BB1X1)                                  0.1054     5.8295 r
+  U10817/Y (BUFX2)                                      0.1038     5.9333 r
+  U10053/Y (BUFX3)                                      0.0884     6.0216 r
+  U10895/Y (OAI21XL)                                    0.0642     6.0858 f
+  clk_gate_rotorB_table_reg_3_/EN (SNPS_CLOCK_GATE_HIGH_enigma_part3_mydesign_191)
+                                                        0.0000     6.0858 f
+  clk_gate_rotorB_table_reg_3_/latch/D (TLATNXL)        0.0275     6.1133 f
+  data arrival time                                                6.1133
+
+  clock clk (fall edge)                                 5.2500     5.2500
+  clock network delay (ideal)                           0.0000     5.2500
+  clk_gate_rotorB_table_reg_3_/latch/GN (TLATNXL)       0.0000     5.2500 f
+  time borrowed from endpoint                           0.8633     6.1133
+  data required time                                               6.1133
+  --------------------------------------------------------------------------
+  data required time                                               6.1133
+  data arrival time                                               -6.1133
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                               5.2500   
+  library setup time                                   -0.0440   
+  --------------------------------------------------------------
+  max time borrow                                       5.2060   
+  actual time borrow                                    0.8633   
+  --------------------------------------------------------------
+
+
+  Startpoint: table_idx[1]
+              (input port clocked by clk)
+  Endpoint: clk_gate_rotorB_table_reg_4_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  enigma_part3       Large                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  5.2500     5.2500 r
+  table_idx[1] (in)                                     0.0067     5.2567 r
+  U13020/Y (NOR2BXL)                                    0.0732     5.3300 r
+  U10696/Y (AND2XL)                                     0.0890     5.4190 r
+  U10978/Y (INVX1)                                      0.0891     5.5081 f
+  U11830/Y (OA22X4)                                     0.1489     5.6570 f
+  U10827/Y (INVX1)                                      0.0671     5.7240 r
+  U10826/Y (AOI2BB1X1)                                  0.1054     5.8295 r
+  U10817/Y (BUFX2)                                      0.1038     5.9333 r
+  U10053/Y (BUFX3)                                      0.0884     6.0216 r
+  U10896/Y (OAI21XL)                                    0.0642     6.0858 f
+  clk_gate_rotorB_table_reg_4_/EN (SNPS_CLOCK_GATE_HIGH_enigma_part3_mydesign_190)
+                                                        0.0000     6.0858 f
+  clk_gate_rotorB_table_reg_4_/latch/D (TLATNXL)        0.0275     6.1133 f
+  data arrival time                                                6.1133
+
+  clock clk (fall edge)                                 5.2500     5.2500
+  clock network delay (ideal)                           0.0000     5.2500
+  clk_gate_rotorB_table_reg_4_/latch/GN (TLATNXL)       0.0000     5.2500 f
+  time borrowed from endpoint                           0.8633     6.1133
+  data required time                                               6.1133
+  --------------------------------------------------------------------------
+  data required time                                               6.1133
+  data arrival time                                               -6.1133
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                               5.2500   
+  library setup time                                   -0.0436   
+  --------------------------------------------------------------
+  max time borrow                                       5.2064   
+  actual time borrow                                    0.8633   
+  --------------------------------------------------------------
+
+
+1
