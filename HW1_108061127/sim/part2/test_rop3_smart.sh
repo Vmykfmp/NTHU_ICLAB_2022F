@@ -1,1 +1,0 @@
-vcs -f test_rop3_smart.f -full64 -R -debug_access+all +v2k +define+N=4
