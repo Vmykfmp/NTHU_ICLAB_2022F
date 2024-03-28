@@ -1,0 +1,2 @@
+Compare the area, the total area of rop3_smart is 1520 and rop3_lut256 is 1713. Since rop3_smart used N bits registers while rop3_lut256 used a huge MUX256 to implement the same function, the area rop3_smart is smaller.
+Compare the power, both dynamic power and leakage power of rop3_smart are lower than rop3_lut256. Thus, with clock period 2.0ns, the rop3_smart has better perfomance than rop3_lut256 on area and power.  

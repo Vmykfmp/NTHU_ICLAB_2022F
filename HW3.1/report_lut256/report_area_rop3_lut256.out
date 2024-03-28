@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : area
+Design : rop3_lut256
+Version: R-2020.09-SP5
+Date   : Tue Nov  1 14:03:52 2022
+****************************************
+
+Library(s) Used:
+
+    slow_vdd1v2 (File: /usr/cadtool/GPDK45/gsclib045_svt_v4.4/gsclib045/db/slow_vdd1v2_basicCells_wl.db)
+
+Number of ports:                          116
+Number of nets:                           737
+Number of cells:                          664
+Number of combinational cells:            499
+Number of sequential cells:               152
+Number of macros/black boxes:               0
+Number of buf/inv:                        149
+Number of references:                      29
+
+Combinational area:                779.076017
+Buf/Inv area:                      116.280003
+Noncombinational area:             934.686021
+Macro/Black Box area:                0.000000
+Net Interconnect area:               0.000000
+
+Total cell area:                  1713.762038
+Total area:                       1713.762038
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  --------------------------------------------
+rop3_lut256                       1713.7620    100.0  758.5560   845.4240  0.0000  rop3_lut256
+clk_gate_D_reg                       6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_0
+clk_gate_D_reg_0                     6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_11
+clk_gate_D_reg_1                     6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_10
+clk_gate_D_reg_2                     6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_9
+clk_gate_P_reg                       6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_4
+clk_gate_P_reg_0                     6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_3
+clk_gate_P_reg_1                     6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_2
+clk_gate_P_reg_2                     6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_1
+clk_gate_S_reg                       6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_8
+clk_gate_S_reg_0                     6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_7
+clk_gate_S_reg_1                     6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_6
+clk_gate_S_reg_2                     6.8400      0.4    1.3680     5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_rop3_lut256_mydesign_5
+fsm_U0                              27.7020      1.6    4.1040    23.5980  0.0000  fsm
+--------------------------------  ---------  -------  --------  ---------  ------  --------------------------------------------
+Total                                                 779.0760   934.6860  0.0000
+
+1
